@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumi - Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <h1 class="logo">Lumi</h1>
+        <nav>
+            <a href="lumi.html">Home</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="reflection.html">How I used AI</a>
+        </nav>
+    </header>
+
+    <!-- CHATBOT -->
+    <section class="chat-area">
+        <h2>Talk to Lumi</h2>
+        <div id="chat-output" class="chat-output">
+            <p><b>Lumi:</b> Hi! Tell me what's on your mind.</p>
+        </div>
+        <input type="text" id="user-input" placeholder="Type here...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <!-- STUDY PLAN -->
+    <section class="plan-area">
+        <h2>Build My Study Plan</h2>
+        <label>Subject:</label>
+        <input type="text" id="subject" placeholder="e.g. Maths">
+        <label>Days till exam:</label>
+        <input type="number" id="days" placeholder="e.g. 5">
+        <label>Hours per day:</label>
+        <input type="number" id="hours" placeholder="e.g. 2">
+        <button onclick="makePlan()">Build My Plan</button>
+        <div id="plan-output" class="plan-output"></div>
+    </section>
+
+    <footer>
+        <p>Made with care by Aryan - Powered by AI ideas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
